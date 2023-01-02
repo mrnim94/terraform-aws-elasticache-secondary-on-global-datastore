@@ -1,0 +1,1 @@
+# terraform-aws-elasticache-secondary-on-global-datastore
