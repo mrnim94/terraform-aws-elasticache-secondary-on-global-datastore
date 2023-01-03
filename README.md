@@ -37,7 +37,7 @@ data "terraform_remote_state" "vpc" {
 
 module "elasticache-secondary-on-global-datastore" {
   source  = "mrnim94/elasticache-secondary-on-global-datastore/aws"
-  version = "0.0.9"
+  version = "1.0.0"
 
   aws_region = var.aws_region
   business_divsion = "nimtechnology"
@@ -49,3 +49,7 @@ module "elasticache-secondary-on-global-datastore" {
   vpc_id = data.terraform_remote_state.vpc.outputs.vpc_id
 }
 ```
+
+## In other to understand much more detail about the module. You should click below my post. 
+
+[![Image](https://nimtechnology.com/wp-content/uploads/2023/01/image-1.png "[Redis] ElastiCache-Redis Cross-Region Replication|Global DataStore")](https://nimtechnology.com/2023/01/03/redis-elasticache-redis-cross-region-replicationglobal-datastore/)
